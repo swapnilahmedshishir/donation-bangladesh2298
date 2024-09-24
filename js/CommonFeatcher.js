@@ -51,7 +51,7 @@ const CommonFeatcher = (doanteAmount, id, title) => {
                 <span class="text-xl font-bold text-[rgb(17,17,17)]">
                   Date :</span
                 >
-                ${new Date("2015-03-25")}
+                ${new Date()}
                        </div>`;
   donationDataHistory.appendChild(div);
 };
