@@ -21,14 +21,18 @@ const CommonFeatcher = (doanteAmount, id, title) => {
     amoutnValidationMessage.innerText = "invaid amount";
     return;
   }
-
   // card taka + input filed data increment
   const totalDonateAmount = inputFiled + floodDonateAmount;
-  document.getElementById(id).innerText = totalDonateAmount;
 
   // total donation amount need decrement
-  totalDonationNeed.innerText =
+  const updatedDonationAmount =
     parseFloat(totalDonationNeed.innerText) - inputFiled;
+  if (parseFloat(totalDonationNeed.innerText) < inputFiled) {
+    return;
+  } else {
+    document.getElementById(id).innerText = totalDonateAmount;
+    totalDonationNeed.innerText = updatedDonationAmount;
+  }
 
   // donattion amount add success blanK the input filed
   document.getElementById(doanteAmount).value = "";
