@@ -14,14 +14,14 @@
   <body class="lexend">
     <!-- navabar section -->
     <navbar class="fixed w-full z-[100]">
-      <div class="navbar bg-[rgba(43,66,50,0.1)] px-48 py-[24px]">
+      <div class="navbar bg-[rgba(43,66,50,0.1)] md:px-48 py-[24px]">
         <div class="navbar-start">
           <a href="/BlogPage/blog.html">
             <button class="btn btn-success">Blog</button>
           </a>
         </div>
         <div class="navbar-center">
-          <div class="flex items-center gap-7">
+          <div class="flex items-center md:gap-7 -ml-7 md:ml-0">
             <img src="\assets\logo.png" alt="donation website icon" />
             <p class="text-[20px] text-[rgb(17,17,17)] font-semibold">
               Donation Bangladesh
@@ -42,7 +42,7 @@
       <!-- divider button -->
       <div class="divider my-0 h-0"></div>
       <!-- frist part button  -->
-      <div class="px-48 py-[24px]">
+      <div class="md:px-48 py-[24px]">
         <div class="flex items-center justify-center gap-7">
           <button class="btn btn-success" id="donationbtn">Donation</button>
           <button class="btn" id="historybtn">History</button>
@@ -50,11 +50,15 @@
       </div>
       <section id="donationSection">
         <!-- donation frist section -->
-        <div class="px-48 py-[24px]">
+        <div class="md:px-48 py-[24px]">
           <div
-            class="bg-white flex items-center p-[34px] gap-8 rounded-2xl border border-[rgba(17,17,17,0.1)] border-solid"
+            class="bg-white md:flex items-center p-[34px] gap-8 rounded-2xl border border-[rgba(17,17,17,0.1)] border-solid"
           >
-            <img src="\assets\noakhali.png" alt="noakhali flodd image " />
+            <img
+              src="\assets\noakhali.png"
+              alt="noakhali flodd image"
+              class="mb-3 md:mb-0"
+            />
             <!-- nakli text  -->
             <div>
               <div
@@ -102,11 +106,15 @@
           </div>
         </div>
         <!-- donation second section -->
-        <div class="px-48 py-[24px]">
+        <div class="md:px-48 py-[24px]">
           <div
-            class="bg-white flex items-center p-[34px] gap-8 rounded-2xl border border-[rgba(17,17,17,0.1)] border-solid"
+            class="bg-white md:flex items-center p-[34px] gap-8 rounded-2xl border border-[rgba(17,17,17,0.1)] border-solid"
           >
-            <img src="\assets\feni.png" alt="noakhali flodd image " />
+            <img
+              src="\assets\feni.png"
+              alt="noakhali flodd image "
+              class="mb-3 md:mb-0"
+            />
             <!-- feni text  -->
             <div>
               <div
@@ -153,11 +161,15 @@
           </div>
         </div>
         <!-- donation third section -->
-        <div class="px-48 py-[24px]">
+        <div class="md:px-48 py-[24px]">
           <div
-            class="bg-white flex items-center p-[34px] gap-8 rounded-2xl border border-[rgba(17,17,17,0.1)] border-solid"
+            class="bg-white md:flex items-center p-[34px] gap-8 rounded-2xl border border-[rgba(17,17,17,0.1)] border-solid"
           >
-            <img src="\assets\quota-protest.png" alt="noakhali flodd image " />
+            <img
+              src="\assets\quota-protest.png"
+              alt="noakhali flodd image "
+              class="mb-3 md:mb-0"
+            />
             <!-- quota text  -->
             <div>
               <div
@@ -227,7 +239,7 @@
 
       <!-- history section -->
       <section id="historySection" class="hidden">
-        <div class="px-48 py-[10px]" id="donationDataHistory"></div>
+        <div class="md:px-48 py-[10px]" id="donationDataHistory"></div>
       </section>
     </main>
 
